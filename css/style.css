@@ -1,0 +1,226 @@
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+
+
+/* Global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    height:30px;
+    background: black;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: cornflowerblue;
+}
+
+.dark{
+    padding:15px;
+    background: cornflowerblue ;
+    color: black; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* header */
+header{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: cornflowerblue 3px solid;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  
+}
+
+
+header a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+
+header #hover{
+    color: white;
+    font-weight: bold;
+}
+
+header .uppercase, header .current a{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header a:hover{
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+/* showcase */
+#showcase{
+    /*min-height: 400px;
+    background:url("../img/showcase.jpg") no-repeat; /* 0 -400px;*/
+    text-align: center;
+    color: black;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+
+/* newsletter */
+#newsletter {
+    padding: 10px;
+    color: white;
+    background: rgb(148, 183, 247);
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 20px;
+}
+
+#newsletter input [type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+
+}
+
+/*quotes*/
+#quotes{
+    margin-top: 20px;
+}
+
+#quotes .quote{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#quotes .quote img{
+    width: 90px; 
+}
+
+
+/*sidebar*/
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+
+/*main-col*/
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+/* Blog */
+ul#blog li{
+    list-style: none;
+    padding: 20px;
+    border: cornflowerblue solid 1px;
+    margin-bottom: 5px;
+    background: rgb(209, 234, 255);
+}
+
+
+#contact {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#contact .column {
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+    
+footer{
+    padding: 20px;
+    margin-top: 70px;
+    color: cornflowerblue;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 0;
+}
+@media (max-width: 768px){
+    header #branding, 
+    header nav,
+    header nav li
+    #newsletter h1
+    #newsletter form
+    #quotes .quote
+    article#main-col
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+header{
+    padding-bottom: 20px;
+}
+
+#showcase{
+    margin-top:40px;
+}
+
+#newsletter button, .quote button{
+    display: block;
+    width: 100%;
+}
+
+#newsletter form input[tyoe="email"], .quote textarea{
+    width:100%;
+    margin-bottom: 5px;
+}
